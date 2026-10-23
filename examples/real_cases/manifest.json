@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "units": "angstrom^-1",
+  "cases": [
+    {
+      "id": "pq",
+      "display_name": "PQ",
+      "filename": "pq.csv",
+      "q_scale": null,
+      "provenance": "Byte-identical copy of the historical dataset_PQ.csv paper input.",
+      "source_sha256": "f43215ac11eaae87fe85e84fc4b8655da0f7db54be1db269314dd22b9f9372af",
+      "without_specular": {
+        "filename": "pq_without_specular.csv",
+        "source_filename": "pq.csv",
+        "source_sha256": "f43215ac11eaae87fe85e84fc4b8655da0f7db54be1db269314dd22b9f9372af",
+        "sha256": "cbd13cac435a02e33768a1149c9afcaf8bfc63faa99b6d908d3cfa8e7713c620",
+        "input_rows": 75,
+        "output_rows": 74,
+        "removed_specular_rows": 0,
+        "removed_zero_placeholder_rows": 1,
+        "identical_to_source": false
+      }
+    },
+    {
+      "id": "mapbbr3",
+      "display_name": "MAPbBr3",
+      "filename": "mapbbr3.csv",
+      "q_scale": null,
+      "provenance": "Byte-identical copy of the historical MAPbBr3.csv paper input.",
+      "source_sha256": "1aa88199ca0934aa2d116ab3aac29b9768fe3f930cfd45b45e108314f22ce89c",
+      "without_specular": {
+        "filename": "mapbbr3_without_specular.csv",
+        "source_filename": "mapbbr3.csv",
+        "source_sha256": "1aa88199ca0934aa2d116ab3aac29b9768fe3f930cfd45b45e108314f22ce89c",
+        "sha256": "0943735527b4f71742c5fc601001a0a2ffd5a95e29d7d7e6c728dbbcda1bd99d",
+        "input_rows": 15,
+        "output_rows": 12,
+        "removed_specular_rows": 2,
+        "removed_zero_placeholder_rows": 1,
+        "identical_to_source": false
+      }
+    },
+    {
+      "id": "naib_s11",
+      "display_name": "NAIB-S11",
+      "filename": "naib_s11.csv",
+      "q_scale": 0.9,
+      "provenance": "Byte-identical copy of the historical NAIB-S11.csv paper input.",
+      "source_sha256": "028edf3762e1a51698e72743d7d5bcae2357642139151700593813b2ef815a62",
+      "without_specular": {
+        "filename": "naib_s11_without_specular.csv",
+        "source_filename": "naib_s11.csv",
+        "source_sha256": "028edf3762e1a51698e72743d7d5bcae2357642139151700593813b2ef815a62",
+        "sha256": "4df4c2bfb11bb5a7e1056f1adcafb405cb265b4a5dfbc1388005c897f043dcaa",
+        "input_rows": 93,
+        "output_rows": 87,
+        "removed_specular_rows": 5,
+        "removed_zero_placeholder_rows": 1,
+        "identical_to_source": false
+      }
+    },
+    {
+      "id": "cu_bod_mof",
+      "display_name": "Cu2(bdc)2(dabco) SURMOF",
+      "filename": "cu_bod_mof.csv",
+      "q_scale": 1,
+      "provenance": "Historical manually selected ten-reflection paper input; retained exactly because generic local-maxima extraction changes the neural input.",
+      "source_map": {
+        "source_archive": "Cu2(bdc)2(dabco).zip",
+        "source_member": "CuBDC_SURMOF_q_space.txt",
+        "source_sha256": "79f7d20206d2aa0eec728a3ab47c955c50e52ae2fdb04981993ab0d26bca3367"
+      },
+      "without_specular": {
+        "filename": "cu_bod_mof_without_specular.csv",
+        "source_filename": "cu_bod_mof.csv",
+        "source_sha256": "b6c7ec846b97fc2692a9ca9c39ec087284038202e75c1591e7ee49967698dff1",
+        "sha256": "b6c7ec846b97fc2692a9ca9c39ec087284038202e75c1591e7ee49967698dff1",
+        "input_rows": 10,
+        "output_rows": 10,
+        "removed_specular_rows": 0,
+        "removed_zero_placeholder_rows": 0,
+        "identical_to_source": true
+      }
+    }
+  ],
+  "specular_filter": {
+    "coordinate": "q_xy",
+    "units": "angstrom^-1",
+    "cutoff": 0.05,
+    "remove_when": "abs(q_xy) <= 0.05",
+    "description": "Applied to the original physical coordinates, before scaling or q-range filtering. Also removes zero-coordinate placeholders. All retained rows, column order, precision, peak identifiers and ordering are preserved verbatim. No peaks are added."
+  }
+}

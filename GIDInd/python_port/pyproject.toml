@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gidind-reference"
+version = "0.5.0"
+description = "Headless CPU Python port of GIDInd with discrete-orientation restriction"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "openpyxl>=3.1,<4"]
+license = {text = "GPL-3.0-or-later"}
+
+[project.scripts]
+gidind-reference = "gidind_reference.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gidind_reference*"]

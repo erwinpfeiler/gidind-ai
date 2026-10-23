@@ -1,0 +1,64 @@
+# Python and build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Operating-system and editor files
+.DS_Store
+.vscode/
+settings.json
+.~lock.*
+
+# Model files and generated experiment outputs
+*.ckpt
+*.keras
+*.pb
+*.tfevents*
+prediction_storage/
+outputs/
+inference_test/
+paper_*/
+*.log
+*.out
+*.err
+slurm-*.out
+slurm-*.err
+
+# COD-derived inputs and generated synthetic datasets. These are retrieved or
+# reproduced separately; they are deliberately not part of the source release.
+cod_cif_files/
+cod-cifs-mysql/
+training_unit_cells/
+test_unit_cells/
+gmm_weights/*.pkl
+*.npy
+*.pkl
+*.cif
+
+# Large or local data files. Approved reviewer peak lists are explicitly kept.
+*.zip
+*.csv
+!examples/
+!examples/real_cases/
+!examples/real_cases/*.csv
+
+/reviewer_outputs/
+/.assets/
+/.jupyter/
+/validation_results/
+*.ipynb_checkpoints/
+/GIDInd/python_port/*.egg-info/
+
+*.docx
+
+*.doc
+
+/document_revision_work/
+
+/refinement_validation_results/

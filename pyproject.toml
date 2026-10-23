@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gidind-ai"
+version = "1.0.0"
+description = "Grazing-incidence diffraction inference and gradient-based refinement"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "captum>=0.7,<1",
+    "json5>=0.9,<1",
+    "lightning>=2.6.1,<2.7",
+    "matplotlib>=3.8,<4",
+    "numba>=0.60,<1",
+    "numpy>=1.26,<3",
+    "optuna>=3.6,<5",
+    "pandas>=2.2,<3",
+    "pymatgen>=2024.1",
+    "pytorch-minimize",
+    "scikit-learn==1.9.0",
+    "scipy>=1.11,<2",
+    "torch>=2.2,<3",
+    "torchvision>=0.17,<1",
+    "tqdm>=4.66,<5",
+]
+
+[project.scripts]
+gidind-ai = "gidind_ai.cli:main"
+gidind-ai-figure3 = "gidind_ai.figure3_benchmark:main"
+
+[project.optional-dependencies]
+benchmark = [
+    "corner>=2.2,<3",
+    "seaborn>=0.13,<1",
+]
+generation = ["pyxtal>=1.0,<2"]
+io = [
+    "h5py>=3.10,<4",
+    "pillow>=10,<12",
+]
+models = ["huggingface_hub>=0.24,<1"]
+paper = ["huggingface_hub>=0.24,<1"]
+reviewer = ["jupyterlab>=4,<5", "ipykernel>=6,<8", "nbclient>=0.10,<1", "nbformat>=5,<6", "tensorboard>=2,<3"]
+test = ["pytest>=8,<10"]
+dev = [
+    "build>=1.2,<2",
+    "mypy>=1.11,<2",
+    "pytest>=8,<10",
+    "ruff>=0.6,<1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+    "config_loader",
+    "gixd_benchmark",
+    "gixd_data_generator",
+    "gixd_data_stream",
+    "gixd_prediction",
+    "gixd_regressor",
+    "gixd_utility",
+    "load_peaks",
+    "neural_network",
+    "niggli",
+    "plot_benchmark_results",
+    "polishing_fit",
+    "polishing_fit_nphase",
+    "read_crystal_data_2",
+    "symmetry_dict",
+    "unit_cell_generator",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["gidind_ai"]
+
+[tool.setuptools.package-data]
+gidind_ai = ["config.json5", "release_models.json", "paper_assets.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+markers = [
+    "smoke: fast checks that do not require model weights or external data",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.mypy]
+files = ["src/gidind_ai"]
+follow_imports = "skip"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = true

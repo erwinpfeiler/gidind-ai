@@ -1,0 +1,60 @@
+{
+  "source_commit": "e6029d4",
+  "environment": "provenance/environment.lock.txt; Python 3.12 Linux x86_64",
+  "cases": {
+    "specular": {
+      "status": "completed",
+      "counts": {
+        "specular_stage1_systems": 26244,
+        "singular_seed_systems": 10356,
+        "specular_abg_candidates": 113,
+        "specular_stage2_systems": 930216,
+        "singular_klr_systems": 14508,
+        "cell_bounds": 100537,
+        "duplicate_native_assignments": 6,
+        "native_residual_cutoff": 103,
+        "completed_abg_sweeps": 113,
+        "candidates_selected_for_finalization": 18,
+        "reduced_candidates": 18,
+        "finalized_native_candidates": 18,
+        "accepted_solutions": 4,
+        "duplicate_final_solution": 1
+      },
+      "solutions_sha256": "cabf7bcf1a1623fdb8b24748cce757d3a0dd5977d179fc442546bade4d0606f8",
+      "intermediate_sha256": {
+        "reciprocal_metrics": "fa1c9577d20be783196b63363d1535bdac4260f879bb91ba3a11491d67df429e",
+        "hkl": "060e4182984606ac58c286d0d129a40bc53377afdcb8bdb696387640801b2cd0",
+        "planes": "bfef70d23b5b08b8875e25ddb9048a59e598cc1d7faddd82d925e1e64f0daf7f",
+        "projections": "f3047a03f435f555d26a1bed912db07f48fba321514cb546a50d96640266022b"
+      },
+      "num_solutions": 4
+    },
+    "without-specular": {
+      "status": "completed",
+      "counts": {
+        "without_specular_hkl_quadruples": 531441,
+        "singular_four_hkl": 71409,
+        "singular_six_hkl": 368608,
+        "nonpositive_seed_metric": 57276,
+        "max_peak_error": 23836,
+        "pair_reduction_gate": 6656,
+        "native_no_specular_candidates": 1456,
+        "duplicate_seed_geometry": 2200,
+        "candidates_selected_for_finalization": 48,
+        "reduced_candidates": 48,
+        "accepted_solutions": 1,
+        "finalized_native_candidates": 48,
+        "duplicate_final_solution": 47,
+        "improved_duplicate_fit": 1
+      },
+      "solutions_sha256": "379dfd57e3a4c7942e302cd7fa9707916af9970e556492feff4204b79154a7f1",
+      "intermediate_sha256": {
+        "reciprocal_metrics": "83d599bd6efe34abc0ce646442de5661ac7f1e8a47ef61562b4d8d17d0d02c21",
+        "hkl": "e077ec1b78a2769e259446b94687e0f4cad885d98c5de8e1b1de1c324eec50e5",
+        "planes": "87ebe434c9039b13a282d09d72d61e5451245790a8a6733672ef0ff7121882b2",
+        "projections": "599458ff61d58895280084db3fcfd2641b0e62e7472141669952c2ddd0dd846a"
+      },
+      "num_solutions": 1
+    }
+  }
+}

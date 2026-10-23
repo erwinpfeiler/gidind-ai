@@ -1,0 +1,2 @@
+# Python 3.11–3.13. Prefer bash setup.sh, which also installs the port and assets.
+-e .[models,paper,benchmark,reviewer]

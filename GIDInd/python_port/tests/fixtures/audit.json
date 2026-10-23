@@ -1,0 +1,2269 @@
+{
+  "traces": [
+    {
+      "intended_four_source_rows": [
+        2,
+        4,
+        3,
+        5
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8142426,
+      "zero_based_batch": 3975,
+      "selected_source_rows": [
+        2,
+        4,
+        3,
+        5,
+        6,
+        9
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          -2
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        4,
+        3,
+        5,
+        6,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 4,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        4,
+        3,
+        6
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8142394,
+      "zero_based_batch": 3975,
+      "selected_source_rows": [
+        2,
+        4,
+        3,
+        6,
+        9,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 5,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        4,
+        3,
+        6,
+        9,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        4,
+        3,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8142429,
+      "zero_based_batch": 3975,
+      "selected_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 5,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          2,
+          -1,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8147019,
+      "zero_based_batch": 3978,
+      "selected_source_rows": [
+        2,
+        3,
+        5,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        3,
+        5,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        4,
+        5,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8147054,
+      "zero_based_batch": 3978,
+      "selected_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 5,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        4,
+        6,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8143054,
+      "zero_based_batch": 3976,
+      "selected_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 4,
+      "reference_metric_rank": 5,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 4,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8037644,
+      "zero_based_batch": 3924,
+      "selected_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 5,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        3,
+        5,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8037679,
+      "zero_based_batch": 3924,
+      "selected_source_rows": [
+        2,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          2,
+          1,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          2,
+          1,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        3,
+        6,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8033679,
+      "zero_based_batch": 3922,
+      "selected_source_rows": [
+        2,
+        3,
+        6,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 5,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        3,
+        6,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        2,
+        5,
+        6,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 8611804,
+      "zero_based_batch": 4204,
+      "selected_source_rows": [
+        2,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        4,
+        3,
+        5,
+        6
+      ],
+      "enumerated_h4": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 41240769,
+      "zero_based_batch": 20137,
+      "selected_source_rows": [
+        4,
+        3,
+        5,
+        6,
+        9,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        4,
+        3,
+        5,
+        6,
+        9,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        4,
+        3,
+        5,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 41240804,
+      "zero_based_batch": 20137,
+      "selected_source_rows": [
+        4,
+        3,
+        5,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        4,
+        5,
+        6,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        4,
+        3,
+        6,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 41236804,
+      "zero_based_batch": 20135,
+      "selected_source_rows": [
+        4,
+        3,
+        6,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        4,
+        3,
+        6,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        4,
+        5,
+        6,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 41814929,
+      "zero_based_batch": 20417,
+      "selected_source_rows": [
+        4,
+        5,
+        6,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": true,
+      "native_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        4,
+        5,
+        6,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    },
+    {
+      "intended_four_source_rows": [
+        3,
+        5,
+        6,
+        9
+      ],
+      "enumerated_h4": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ]
+      ],
+      "in_seed_domain": true,
+      "zero_based_search_ordinal": 28143054,
+      "zero_based_batch": 13741,
+      "selected_source_rows": [
+        2,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "four_selection_preserved": false,
+      "native_h6": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_h6_at_selected_rows": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "native_metric_rank": 5,
+      "reference_metric_rank": 6,
+      "contains_zero_hkl": true,
+      "tall_lstsq_replay_h6": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tall_lstsq_replay_source_rows": [
+        2,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "tall_lstsq_replay_metric_rank": 5,
+      "rejection": "singular_six_hkl"
+    }
+  ]
+}

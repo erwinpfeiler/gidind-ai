@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "purpose": "Provenance and leakage audit for the immutable legacy synthetic benchmark split.",
+  "status": "frozen_legacy_evaluation_split",
+  "policy": {
+    "paper_benchmark": "Use these arrays unchanged with the released legacy checkpoints.",
+    "future_training": "Do not use this test split to train, select, or tune any new model. Create a newly Niggli-reduced and globally deduplicated split for future training instead.",
+    "validation": "Validation was drawn from the training partition and is not a protected paper holdout."
+  },
+  "legacy_split_history": {
+    "six_lattice_systems_first_committed": "2024-10-17",
+    "triclinic_added": "2025-02-26",
+    "split_fraction": {
+      "training": 0.8,
+      "test": 0.2
+    },
+    "split_seed": 42,
+    "source_limitation": "The historic parsed COD tables do not contain per-entry COD identifiers or an upstream archive checksum. They are retained solely as immutable derived paper assets, not as a rebuildable live COD snapshot."
+  },
+  "gmm_sampler": {
+    "path": "paper_1e-3_0050_00122_20/unit_cell_generators.pkl",
+    "sha256": "788f51cc2d8aeaa64c108bc8a3dbded421abd43e482ad5ffc637fbee1955c904",
+    "legacy_pickle": true,
+    "trusted_loading_only": true,
+    "sampler_seed": 42,
+    "array_identity_verified": "The train_crystals and test_crystals stored in this sampler are byte-for-byte equal to every corresponding frozen split file.",
+    "gmm_fit_input_verified": {
+      "result": "train_only",
+      "evidence": "src/unit_cell_generator.py: learn_crystal_distribution assigns self.train_crystals[lattice_type] to train_crystals, creates an internal validation subset from it, and calls GaussianMixture.fit(train_values). The code version at commit 19ed6c36d5c83cd702a9eda19d9d914ffe1e0bcd (2025-05-22), before the sampler timestamp, has the same train-only path. test_crystals is accessed only by get_testing_unit_cells.",
+      "qualification": "This establishes that the sampler did not fit directly on test rows. It does not remove the Niggli-equivalent legacy rows reported below."
+    },
+    "components_by_lattice_system": {
+      "triclinic": 150,
+      "monoclinic": 140,
+      "orthorhombic": 100,
+      "tetragonal": 140,
+      "rhombohedral": 100,
+      "hexagonal": 130,
+      "cubic": 10
+    }
+  },
+  "audit": {
+    "reducer": "niggli.cell_to_niggli",
+    "key_precision_decimal_places": 4,
+    "niggli_failures": 0,
+    "raw_overlap": {
+      "within_same_lattice_system": 0,
+      "global": 3
+    },
+    "niggli_equivalent_cross_split_overlap": {
+      "global": 30,
+      "within_system": {
+        "cubic": 1,
+        "monoclinic": 5,
+        "orthorhombic": 17,
+        "triclinic": 0,
+        "tetragonal": 0,
+        "rhombohedral": 0,
+        "hexagonal": 0
+      },
+      "interpretation": "The frozen legacy split is reproducible and the GMM fit was train-only, but it is not a perfectly Niggli-deduplicated held-out split. Keep it unchanged for exact reproduction of the existing checkpoints; do not describe it as leakage-free."
+    },
+    "global_counts": {
+      "training_rows": 276731,
+      "test_rows": 69186,
+      "training_unique_niggli_keys": 276691,
+      "test_unique_niggli_keys": 69184
+    }
+  },
+  "files": {
+    "training_unit_cells/cubic.npy": "98e12f3d58ddece96d33f5e79452763a0c604f04eda51c01dc7538d7d9c8d213",
+    "training_unit_cells/hexagonal.npy": "e0d03687f5d97e2bec0af6940000b383992cc1fb2e2cb2882ef9b92bc1f3b905",
+    "training_unit_cells/monoclinic.npy": "0248cf37d9074e58b9549b2ff4af6f19aa11652e35050c5ba16368818262ba24",
+    "training_unit_cells/orthorhombic.npy": "64ff6271ae503895ec94ceb9530666c72bc6efb0f5b68e1ac7b830a9c395dad1",
+    "training_unit_cells/rhombohedral.npy": "c42adae009740acb29c81897ca686ca74bd814d1e98c8aafcf0b755299dfe54f",
+    "training_unit_cells/tetragonal.npy": "f101d9016a918458b0d9a3f61926407c70846885d7d5e98434e6eafa412b71f0",
+    "training_unit_cells/triclinic.npy": "aa92baf74bbda3ed60eca956e7d2cc4b94d00c346242ca05dd63daa75e14c12e",
+    "test_unit_cells/cubic.npy": "98d1dcf398d16d7335f1e5ed6688d00db38ab3434d4e33c41418060804619340",
+    "test_unit_cells/hexagonal.npy": "2dc4721b7bb76981a95b9330b77629bd38e9502f84d5a7f46d925901b65d031c",
+    "test_unit_cells/monoclinic.npy": "656c6d9ab9b22963a24a2ea554ecf4189c91e5376e8f4ffeb79af9349e036e4c",
+    "test_unit_cells/orthorhombic.npy": "396273f84c0d1e4dc8c1bd70f2464d28a44e1f32f5c87b27b7b55e6a93885743",
+    "test_unit_cells/rhombohedral.npy": "194dd6e3d06ba963972442ff8af5523bbecdd5a13ce9764a244efcef5bcba431",
+    "test_unit_cells/tetragonal.npy": "3fb4674b8a5adaab488b1a1bfd9b46b4ac315f54672db9d9e051b11dcfb0bcf7",
+    "test_unit_cells/triclinic.npy": "4746a7c73543655483ed1e10d50441ea770cd90a17381813678aa66377fc122c"
+  }
+}

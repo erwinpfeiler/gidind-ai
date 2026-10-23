@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "standard",
+      "repository": "epfeiler/gidind-ai",
+      "revision": "374aed64cf921eb47e3e03452c4337e0e636ff93",
+      "filename": "default_model.ckpt",
+      "sha256": "b7efe2de22fdac9ece25b954634ffbc0a6df5570b01b80a2212a80cdae34dc2a",
+      "intended_use": "PQ, Cu-BOD, MAPbBr3, and synthetic benchmarks.",
+      "input_domain_angstrom_inverse": {
+        "q_xy": [
+          0.0,
+          2.0
+        ],
+        "q_z": [
+          0.0,
+          2.0
+        ]
+      },
+      "scaling": "Use one shared scale from the shorter q axis when no case-specific q_scale is declared; discard out-of-domain values rather than clipping.",
+      "refinement": {
+        "algorithm": "gradient_laplace",
+        "matching_method": "simulated_fractional",
+        "q_cutoff_angstrom_inverse": 0.06,
+        "outer_loops": 10,
+        "maxiter": 50,
+        "q_loss_threshold": 5e-05
+      }
+    },
+    {
+      "id": "high_missingness",
+      "repository": "epfeiler/gidind-ai",
+      "revision": "f1cfccf0db3781747dfa7b184a448ac68e47adff",
+      "filename": "real_cases_model.ckpt",
+      "sha256": "be7f62e28de4ffe3ee6bfffa9569b238e445986f7de577f3ddd6cd2ce24398ce",
+      "intended_use": "NAIB-S11, whose missing reflections are better handled by the high-missingness model.",
+      "training_provenance": {
+        "specular_scan": false,
+        "missing_peak_rate_max": 0.3,
+        "missing_peak_masking": "post-rasterisation",
+        "q_coordinate_jitter_sigma_angstrom_inverse": 0.005
+      },
+      "input_domain_angstrom_inverse": {
+        "q_xy": [
+          0.0,
+          2.0
+        ],
+        "q_z": [
+          0.0,
+          2.0
+        ]
+      },
+      "scaling": "NAIB-S11 uses the documented fixed q_scale of 0.9.",
+      "refinement": {
+        "algorithm": "gradient_laplace",
+        "matching_method": "one2one",
+        "q_cutoff_angstrom_inverse": 0.15,
+        "outer_loops": 10,
+        "maxiter": 10,
+        "q_loss_threshold": 5e-05
+      }
+    }
+  ],
+  "real_cases": [
+    {
+      "id": "pq",
+      "model_id": "high_missingness",
+      "q_scale": null,
+      "refinement": {
+        "algorithm": "gradient_laplace",
+        "matching_method": "hybrid",
+        "q_cutoff_angstrom_inverse": 0.06,
+        "outer_loops": 20,
+        "maxiter": 500,
+        "q_loss_threshold": 5e-05
+      }
+    },
+    {
+      "id": "cu_bod_mof",
+      "model_id": "high_missingness",
+      "q_scale": 1.0,
+      "refinement": {
+        "algorithm": "gradient_laplace",
+        "matching_method": "hybrid",
+        "q_cutoff_angstrom_inverse": 0.05,
+        "outer_loops": 20,
+        "maxiter": 500,
+        "q_loss_threshold": 5e-05
+      }
+    },
+    {
+      "id": "mapbbr3",
+      "model_id": "high_missingness",
+      "q_scale": null,
+      "refinement": {
+        "algorithm": "gradient_laplace",
+        "matching_method": "hybrid",
+        "q_cutoff_angstrom_inverse": 0.06,
+        "outer_loops": 20,
+        "maxiter": 500,
+        "q_loss_threshold": 5e-05
+      }
+    },
+    {
+      "id": "naib_s11",
+      "model_id": "high_missingness",
+      "q_scale": 0.9,
+      "refinement": {
+        "algorithm": "gradient_laplace",
+        "matching_method": "hybrid",
+        "q_cutoff_angstrom_inverse": 0.15,
+        "outer_loops": 20,
+        "maxiter": 500,
+        "q_loss_threshold": 5e-05
+      }
+    }
+  ]
+}

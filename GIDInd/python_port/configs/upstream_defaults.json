@@ -1,0 +1,77 @@
+{
+  "length_bounds": [
+    [
+      3.0,
+      30.0
+    ],
+    [
+      3.0,
+      30.0
+    ],
+    [
+      3.0,
+      30.0
+    ]
+  ],
+  "angle_bounds": [
+    [
+      60.0,
+      120.0
+    ],
+    [
+      60.0,
+      120.0
+    ],
+    [
+      60.0,
+      120.0
+    ]
+  ],
+  "volume_bounds": [
+    50.0,
+    100000.0
+  ],
+  "without_specular_volume_bounds": [
+    1.0,
+    100000.0
+  ],
+  "specular_seed_peaks": 3,
+  "seed_peak_rows": null,
+  "specular_seed_hk": 3,
+  "specular_index_hk": 6,
+  "specular_l": 6,
+  "specular_uv": 2,
+  "specular_w": 3,
+  "redundancy_hk": 4,
+  "specular_cutoff": 0.01,
+  "qxy_stage_cutoff": 0.05,
+  "rmse_cutoffs": [
+    0.05,
+    0.05,
+    0.05
+  ],
+  "without_specular_seed_hkl": [
+    1,
+    1,
+    2
+  ],
+  "without_specular_index_hkl": [
+    3,
+    3,
+    3
+  ],
+  "without_specular_seed_peaks": 8,
+  "without_specular_max_peak_error": 0.1,
+  "without_specular_relative_window": 0.2,
+  "specular_filter_cutoff": 0.05,
+  "plane_limit": 2,
+  "planes": null,
+  "candidate_order": "area",
+  "batch_size": 2048,
+  "time_limit_seconds": 7200.0,
+  "max_solutions": 20000,
+  "max_intermediate_candidates": null,
+  "checkpoint_seconds": 15.0,
+  "workers": 1,
+  "candidate_snapshot_max_rows": 10000
+}

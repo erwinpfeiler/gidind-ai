@@ -1,0 +1,237 @@
+{
+  "solutions": [
+    {
+      "cell": {
+        "a": 5.937837076581338,
+        "b": 5.955243912427601,
+        "c": 5.962708649168546,
+        "alpha": 89.4338509237558,
+        "beta": 89.91285148427002,
+        "gamma": 89.90106565783115
+      },
+      "cell_units": "angstrom,degrees",
+      "volume_angstrom3": 210.83809308350175,
+      "contact_plane": [
+        0,
+        1,
+        0
+      ],
+      "specular_reflection_order": null,
+      "specular_error": null,
+      "rmse": {
+        "q_xy": 0.002759901825372831,
+        "q_z": 0.003711486269983169,
+        "q_xyz": 0.001687255511230366
+      },
+      "max_combined_peak_error": 0.004980899231114964,
+      "native_scores": {
+        "seed_linear_sumerr": 0.0010888104874643616,
+        "initial_max_peak_error": 0.005018806845390909,
+        "first_order_steps_applied": 2
+      },
+      "basis_transform": [
+        [
+          0.0,
+          -0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          1.0,
+          0.0,
+          -0.0
+        ]
+      ],
+      "parameter_uncertainty": null,
+      "uncertainty_note": "Upstream GIDInd supplies residuals, not parameter uncertainties.",
+      "assignments": [
+        {
+          "source_row": 2,
+          "h": -1,
+          "k": 0,
+          "l": 0,
+          "observed_q_xy": 1.054,
+          "observed_q_z": 0.0,
+          "observed_q_xyz": 1.054,
+          "predicted_q_xy": 1.0581618347410215,
+          "predicted_q_z": 0.0018113486527747329,
+          "predicted_q_xyz": 1.058163385062263,
+          "residual_q_xy": 0.004161834741021497,
+          "residual_q_z": 0.0018113486527747329,
+          "residual_q_xyz": 0.004163385062262881
+        },
+        {
+          "source_row": 3,
+          "h": 1,
+          "k": 0,
+          "l": -1,
+          "observed_q_xy": 1.494,
+          "observed_q_z": 0.0,
+          "observed_q_xyz": 1.494,
+          "predicted_q_xy": 1.4944843292049137,
+          "predicted_q_z": 0.008598508577871615,
+          "predicted_q_xyz": 1.4945090647395969,
+          "residual_q_xy": 0.0004843292049137027,
+          "residual_q_z": 0.008598508577871615,
+          "residual_q_xyz": 0.0005090647395968873
+        },
+        {
+          "source_row": 4,
+          "h": -1,
+          "k": 1,
+          "l": 0,
+          "observed_q_xy": 1.056,
+          "observed_q_z": 1.056,
+          "observed_q_xyz": 1.4934095218659884,
+          "predicted_q_xy": 1.058161834741022,
+          "predicted_q_z": 1.0569320716804265,
+          "predicted_q_xyz": 1.49559749687179,
+          "residual_q_xy": 0.0021618347410219396,
+          "residual_q_z": 0.0009320716804264162,
+          "residual_q_xyz": 0.00218797500580159
+        },
+        {
+          "source_row": 5,
+          "h": 1,
+          "k": 1,
+          "l": -1,
+          "observed_q_xy": 1.498,
+          "observed_q_z": 1.06,
+          "observed_q_xyz": 1.8351032668490348,
+          "predicted_q_xy": 1.4944843292049137,
+          "predicted_q_z": 1.0637192316055235,
+          "predicted_q_xyz": 1.8343887303204047,
+          "residual_q_xy": -0.003515670795086301,
+          "residual_q_z": 0.0037192316055234542,
+          "residual_q_xyz": -0.000714536528630072
+        },
+        {
+          "source_row": 6,
+          "h": -2,
+          "k": 0,
+          "l": 0,
+          "observed_q_xy": 2.116,
+          "observed_q_z": 0.0,
+          "observed_q_xyz": 2.116,
+          "predicted_q_xy": 2.116323669482043,
+          "predicted_q_z": 0.0036226973055494657,
+          "predicted_q_xyz": 2.116326770124526,
+          "residual_q_xy": 0.0003236694820429875,
+          "residual_q_z": 0.0036226973055494657,
+          "residual_q_xyz": 0.0003267701245257548
+        },
+        {
+          "source_row": 7,
+          "h": 2,
+          "k": 0,
+          "l": -1,
+          "observed_q_xy": 2.366,
+          "observed_q_z": 0.0,
+          "observed_q_xyz": 2.366,
+          "predicted_q_xy": 2.365585512612185,
+          "predicted_q_z": 0.006787159925096882,
+          "predicted_q_xyz": 2.3655952491963843,
+          "residual_q_xy": -0.0004144873878151323,
+          "residual_q_z": 0.006787159925096882,
+          "residual_q_xyz": -0.0004047508036157943
+        },
+        {
+          "source_row": 8,
+          "h": -2,
+          "k": 1,
+          "l": 0,
+          "observed_q_xy": 2.116,
+          "observed_q_z": 1.058,
+          "observed_q_xyz": 2.3657599201947774,
+          "predicted_q_xy": 2.1163236694820435,
+          "predicted_q_z": 1.0587434203332013,
+          "predicted_q_xyz": 2.3663819438351,
+          "residual_q_xy": 0.0003236694820434316,
+          "residual_q_z": 0.0007434203332012945,
+          "residual_q_xyz": 0.0006220236403224888
+        },
+        {
+          "source_row": 9,
+          "h": -1,
+          "k": 2,
+          "l": 0,
+          "observed_q_xy": 1.052,
+          "observed_q_z": 2.114,
+          "observed_q_xyz": 2.3612920192132103,
+          "predicted_q_xy": 1.0581618347410222,
+          "predicted_q_z": 2.1120527947080783,
+          "predicted_q_xyz": 2.3623025792934933,
+          "residual_q_xy": 0.006161834741022165,
+          "residual_q_z": -0.0019472052919216054,
+          "residual_q_xyz": 0.0010105600802829962
+        },
+        {
+          "source_row": 10,
+          "h": 1,
+          "k": 2,
+          "l": -1,
+          "observed_q_xy": 1.498,
+          "observed_q_z": 2.118,
+          "observed_q_xyz": 2.594210477197253,
+          "predicted_q_xy": 1.4944843292049144,
+          "predicted_q_z": 2.118839954633175,
+          "predicted_q_xyz": 2.5928683274684388,
+          "residual_q_xy": -0.0035156707950856347,
+          "residual_q_z": 0.0008399546331752106,
+          "residual_q_xyz": -0.0013421497288144124
+        },
+        {
+          "source_row": 11,
+          "h": 2,
+          "k": 1,
+          "l": -1,
+          "observed_q_xy": 2.366,
+          "observed_q_z": 1.06,
+          "observed_q_xyz": 2.592596382007813,
+          "predicted_q_xy": 2.365585512612185,
+          "predicted_q_z": 1.0619078829527486,
+          "predicted_q_xyz": 2.5929988756954447,
+          "residual_q_xy": -0.0004144873878151323,
+          "residual_q_z": 0.0019078829527485741,
+          "residual_q_xyz": 0.00040249368763189963
+        },
+        {
+          "source_row": 12,
+          "h": -2,
+          "k": 2,
+          "l": 0,
+          "observed_q_xy": 2.116,
+          "observed_q_z": 2.116,
+          "observed_q_xyz": 2.992475897981469,
+          "predicted_q_xy": 2.116323669482044,
+          "predicted_q_z": 2.113864143360853,
+          "predicted_q_xyz": 2.99119499374358,
+          "residual_q_xy": 0.0003236694820438757,
+          "residual_q_z": -0.002135856639147171,
+          "residual_q_xyz": -0.001280904237888958
+        },
+        {
+          "source_row": 13,
+          "h": 2,
+          "k": 2,
+          "l": -1,
+          "observed_q_xy": 2.368,
+          "observed_q_z": 2.118,
+          "observed_q_xyz": 3.17700299024096,
+          "predicted_q_xy": 2.365585512612185,
+          "predicted_q_z": 2.1170286059804004,
+          "predicted_q_xyz": 3.174555864372207,
+          "residual_q_xy": -0.002414487387814912,
+          "residual_q_z": -0.0009713940195994475,
+          "residual_q_xyz": -0.002447125868752842
+        }
+      ],
+      "id": 1,
+      "assignment_file": "assignments/solution_00001.csv"
+    }
+  ]
+}
