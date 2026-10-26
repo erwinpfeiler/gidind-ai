@@ -1,0 +1,19 @@
+{
+  "description": "SYNTHETIC EXAMPLE ONLY. Replace cases and freeze scientifically justified tolerances before comparing methods.",
+  "top_k": 5,
+  "criteria": {
+    "length_relative_tolerance": 0.02,
+    "angle_absolute_tolerance_degrees": 2.0,
+    "volume_relative_tolerance": 0.05,
+    "orientation_tolerance_degrees": 2.0,
+    "rmse_cutoffs": [0.05, 0.05, 0.05],
+    "basis_limit": 2
+  },
+  "cases": {
+    "synthetic": {
+      "cell": [5.0, 7.0, 9.0, 93.0, 98.0, 104.0],
+      "contact_plane": [0, 0, 1],
+      "source": "Known synthetic cell used to generate validation observations; not a reference for any experimental sample."
+    }
+  }
+}

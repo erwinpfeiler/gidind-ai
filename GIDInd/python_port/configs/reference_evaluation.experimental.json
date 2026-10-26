@@ -1,0 +1,39 @@
+{
+  "description": "User-supplied revision reference table (2026-10-20). Reference columns only; GIDInd-AI estimates are excluded. Approximate literature values may describe different experimental observations.",
+  "criteria_status": "User-approved provisional common tolerances (2026-10-20); not fitted to either method's results.",
+  "top_k": 5,
+  "criteria": {
+    "length_relative_tolerance": 0.02,
+    "angle_absolute_tolerance_degrees": 2.0,
+    "volume_relative_tolerance": 0.05,
+    "orientation_tolerance_degrees": 2.0,
+    "rmse_cutoffs": [0.05, 0.05, 0.05],
+    "basis_limit": 2
+  },
+  "cases": {
+    "pq": {
+      "cell": [5.067, 8.064, 8.87, 91.5, 93.2, 94.2],
+      "contact_plane": [1, 0, 2],
+      "orientation_status": "User-confirmed paper orientation (2026-10-20).",
+      "source": "User-supplied Pentacenequinone reference column, labeled Ref. 18 in the revision table; orientation supplied by user. Bibliographic numbering follows that manuscript."
+    },
+    "mapbbr3": {
+      "cell": [5.95, 5.95, 5.95, 90.0, 90.0, 90.0],
+      "contact_plane": [0, 0, 1],
+      "orientation_status": "User-confirmed paper orientation (2026-10-20).",
+      "source": "User-supplied MAPbBr3 reference column, labeled Ref. 36 in the revision table; orientation supplied by user."
+    },
+    "naib_s11": {
+      "cell": [8.782, 8.987, 13.829, 90.0, 108.213, 90.0],
+      "contact_plane": [0, 0, 1],
+      "orientation_status": "Tentative (001): user explicitly uncertain (2026-10-20). Orientation-dependent correctness labels are conditional on this assumption.",
+      "source": "User-supplied 2D-iso-BA2PbI4 reference column, labeled Ref. 34 in the revision table; NAIB-S11 case mapping supplied by user; orientation tentative."
+    },
+    "cu_bod_mof": {
+      "cell": [9.666, 10.87, 10.87, 90.0, 90.0, 90.0],
+      "contact_plane": [1, 0, 0],
+      "source": "User-supplied Cu2(bdc)2(dabco) table column labeled GIDInd, not an independently identified literature determination. The table axis order is retained. User confirmed the paper uses (100) on 2026-10-20.",
+      "orientation_status": "User-confirmed paper orientation (100) in the table basis (2026-10-20)."
+    }
+  }
+}

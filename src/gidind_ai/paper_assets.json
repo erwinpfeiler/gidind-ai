@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "paper-v1",
+      "repository": "epfeiler/gidind-ai-paper-assets",
+      "revision": "8a670198023ae5872a8379bdc448591112c26ba6",
+      "release_id": "paper-v1-niggli-1e-3",
+      "sampler_sha256": "0a25d7a323d9d378da75534e69ffee38227d93994f442094dbc0775e1a2d7a9f",
+      "intended_use": "Fixed synthetic benchmark for the paper and reviewer reproduction."
+    }
+  ]
+}

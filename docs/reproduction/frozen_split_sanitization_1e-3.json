@@ -1,0 +1,69 @@
+{
+  "applied": true,
+  "generator_after_sha256": "0a25d7a323d9d378da75534e69ffee38227d93994f442094dbc0775e1a2d7a9f",
+  "generator_before_sha256": "c8d2366bbe97c1ce39469c32ed378dd387fb055dd93697ea3f8d365d8c939325",
+  "gmm_refit": false,
+  "legacy_generator_backup": "paper_1e-3_0050_00122_20/unit_cell_generators_pre_niggli_3dp_cleanup.pkl",
+  "niggli_key_precision_decimal_places": 3,
+  "operation": "remove Niggli-equivalent training cells from frozen legacy test split",
+  "schema_version": 1,
+  "systems": {
+    "cubic": {
+      "removed_row_indices_zero_based": [
+        193
+      ],
+      "removed_rows": 1,
+      "test_rows_after": 403,
+      "test_rows_before": 404
+    },
+    "hexagonal": {
+      "removed_row_indices_zero_based": [],
+      "removed_rows": 0,
+      "test_rows_after": 1629,
+      "test_rows_before": 1629
+    },
+    "monoclinic": {
+      "removed_row_indices_zero_based": [],
+      "removed_rows": 0,
+      "test_rows_after": 33400,
+      "test_rows_before": 33400
+    },
+    "orthorhombic": {
+      "removed_row_indices_zero_based": [
+        69
+      ],
+      "removed_rows": 1,
+      "test_rows_after": 11122,
+      "test_rows_before": 11123
+    },
+    "rhombohedral": {
+      "removed_row_indices_zero_based": [],
+      "removed_rows": 0,
+      "test_rows_after": 963,
+      "test_rows_before": 963
+    },
+    "tetragonal": {
+      "removed_row_indices_zero_based": [],
+      "removed_rows": 0,
+      "test_rows_after": 2141,
+      "test_rows_before": 2141
+    },
+    "triclinic": {
+      "removed_row_indices_zero_based": [],
+      "removed_rows": 0,
+      "test_rows_after": 19497,
+      "test_rows_before": 19497
+    }
+  },
+  "test_file_sha256": {
+    "cubic": "6c446195481f2b9bb0a31c781e8467c9c48b4cef3d2114e411fca0581aa5c9d3",
+    "hexagonal": "2dc4721b7bb76981a95b9330b77629bd38e9502f84d5a7f46d925901b65d031c",
+    "monoclinic": "fdaeeaaec4c19e4e9a291e34f867bbcf5b2bb02276af38a9dcffb43c8c43e642",
+    "orthorhombic": "cceb89a15857658fab74ac5adf7d097a2133cc56ddb9eb23f286da918937a4f1",
+    "rhombohedral": "194dd6e3d06ba963972442ff8af5523bbecdd5a13ce9764a244efcef5bcba431",
+    "tetragonal": "3fb4674b8a5adaab488b1a1bfd9b46b4ac315f54672db9d9e051b11dcfb0bcf7",
+    "triclinic": "19e12469a7e42ad789596d4aa6f20bf6c6e05e5bd992458d3106a84717bca28f"
+  },
+  "total_removed_test_rows": 2,
+  "training_cells_changed": false
+}

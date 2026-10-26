@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "purpose": "Post-sanitization verification of the released synthetic benchmark split.",
+  "derived_from": "frozen_split_sanitization_1e-3.json",
+  "reducer": "niggli.cell_to_niggli",
+  "niggli_key_precision_decimal_places": 3,
+  "result": {
+    "training_rows": 276731,
+    "test_rows": 69154,
+    "raw_cross_split_overlap": 0,
+    "niggli_cross_split_overlap": 0,
+    "niggli_reduction_failures": 0
+  },
+  "guarantee": "At the stated three-decimal Niggli key precision, no test cell is equivalent to any training cell. Training arrays and fitted GMM parameters were not changed.",
+  "sanitized_sampler": {
+    "path": "paper_1e-3_0050_00122_20/unit_cell_generators.pkl",
+    "sha256": "0a25d7a323d9d378da75534e69ffee38227d93994f442094dbc0775e1a2d7a9f",
+    "gmm_refit": false,
+    "prior_sampler_private_archive": "paper_1e-3_0050_00122_20/unit_cell_generators_pre_niggli_3dp_cleanup.pkl"
+  }
+}

@@ -1,0 +1,149 @@
+{
+    "run": {
+        "id": "high-missingness-no-specular-30pct",
+        "model_name": "high_missingness_no_specular_30pct",
+        "immutable": true,
+        "description": "High random-missing-reflection regime; specular-axis reflections excluded."
+    },
+    "features":
+    {
+        "image_size": 256,
+        "number_channels": 3, 
+        "min_intensity": 0.0, //unused so far
+        "max_intensity": 1.0,
+        "max_laue_index": 6,
+        "max_q_xy": 2.0,
+        "max_q_z": 2.0,
+        "use_specular_scan": false,
+        "specular_cutoff": 0.05,
+        "training":
+        {
+            "extra_peak_rate": 0.00012207,//0.00012207, // 0.00006104, // 0.00024414
+            "missing_peak_rate": 0.30, // Per-image maximum; actual rate is sampled uniformly from 0 to this value.
+            "gaussian_noise_sigma": 0.005,//0.005, // 0.0025, // 0.01, gaussian noise on q positions for training
+        },
+        "testing":
+        {
+            "number_extra_peaks": 0,
+            "number_missing_peaks": 0,
+            "gaussian_noise_sigma": 0.0
+        },
+        "use_reduced_miller_indices": false,
+        "reduced_miller_indices": [
+            [0,0,1],
+            //[1,0,0],
+            //[0,1,0],
+            //[1,0,2],
+            //[2,-1,0]
+        ],
+        "miller_indices": [
+            [0,0,1],
+            [0,1,-2],
+            [0,1,-1],
+            [0,1,0],//
+            [0,1,1],
+            [0,1,2],
+            [0,2,-1],
+            [0,2,1],
+            [1,-1,-2],
+            [1,-1,-1],
+            [1,-1,0],
+            [1,-1,1],
+            [1,-1,2],
+            [1,-2,-2],
+            [1,-2,-1],
+            [1,-2,0],
+            [1,-2,1],
+            [1,-2,2],
+            [1,0,-2],
+            [1,0,-1],
+            [1,0,0],
+            [1,0,1],
+            [1,0,2],
+            [1,1,-2],
+            [1,1,-1],
+            [1,1,0],
+            [1,1,1],
+            [1,1,2],
+            [1,2,-2],
+            [1,2,-1],
+            [1,2,0],
+            [1,2,1],
+            [1,2,2],
+            [2,-2,-1],
+            [2,-2,1],
+            [2,-1,-2],
+            [2,-1,-1],
+            [2,-1,0],
+            [2,-1,1],
+            [2,-1,2],
+            [2,0,-1],
+            [2,0,1],
+            [2,1,-2],
+            [2,1,-1],
+            [2,1,0],
+            [2,1,1],//
+            [2,1,2],
+            [2,2,-1],//
+            [2,2,1]//
+        ]
+    },
+    "targets":
+    {
+        "min_distance": 4.0, // A
+        "max_distance": 30.0, // A
+        "min_angle": 60.0, // DEG
+        "max_angle": 120.0, // DEG
+        "min_cell_height": 1.5, // A
+    },
+    "ml_hyperparameters":
+    {
+        "num_epochs": 817,
+        "initial_lr": 0.001,
+        "seed": 42,
+        "deterministic_algorithms": true,
+        "checkpoint_every_n_epochs": 1,
+        "simulation":
+        {
+            "batch_size": 1024 // number of synthetic samples generated per simulation chunk
+        },
+        "training":
+        {
+            "batch_size": 256, //160
+            "samples_per_epoch": 100000
+        },
+        "validation":
+        {
+            "batch_size": 256, //200
+            "samples_per_epoch": 5000
+        },
+        "testing":
+        {
+            "batch_size": 256,
+            "samples_per_epoch": 5000
+        }
+    },
+    "refinement_hyperparameters":
+    {
+        "matching_q_cutoff_1": 0.066,
+        "matching_q_cutoff_2": 0.066,
+        "mismatch_tolerance_rate": 0.772,
+        "maximal_refinement_loss": 1.0
+    },
+    "paths":
+    {
+        "root_path": "./training_runs/revision_four_models/high_missingness_no_specular_30pct",
+        "model_path": "model",
+        "training_history_path": "history",
+        "test_data_path": "test_unit_cells",
+        "hkl_symmetry_path": "hkl_symmetry_dict.hkl",
+        "hkl_symmetry_map_path": "hkl_symmetry_map.pkl",
+        "hkl_symmetry_dict_path": "hkl_symmetry_dict.pkl",
+        "unit_cell_generator_path": "../shared/unit_cell_generators.pkl",
+        "prediction_sanity_check_path": "prediction_sanity_check",
+        "ann_toxic_cases_path": "ann_toxic_cases",
+        "wrong_classifications_path": "wrong_classifications",
+        "right_classifications_path": "right_classifications",
+        "bad_predictions_path": "bad_predictions"
+    }
+}
