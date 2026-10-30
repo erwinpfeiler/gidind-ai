@@ -74,13 +74,6 @@ The notebooks call shared, importable functions in `gidind_ai.notebook_workflows
 
 Setup also installs `gidind-reference`. See its [usage](GIDInd/python_port/README.md) and [provenance](GIDInd/python_port/PROVENANCE.md). This is an adapted headless Python implementation; equivalence to the original MATLAB executable is not established. Original GIDInd is credited to M. Kainz and J. Simbrunner. MATLAB binaries and saved comparison runs are not bundled.
 
-## Reproducibility and limitations
-
-Models are hosted at [epfeiler/gidind-ai](https://huggingface.co/epfeiler/gidind-ai); datasets and the preserved sampler at [epfeiler/gidind-ai-paper-assets](https://huggingface.co/datasets/epfeiler/gidind-ai-paper-assets). Code pins immutable revisions and verifies SHA-256 digests. Existing assets and the original GMM coordinate mapping are preserved; new COD preparation performs global three-decimal Niggli deduplication before splitting.
-
-The frozen paper partition has zero training/test overlap at that geometric key precision. Historical separation of refinement tuning and evaluation cannot be fully reconstructed, so it is **not presented as a demonstrably untouched holdout**. Future tuning uses development data, not test examples. Legacy sampler validation is developmental. These notebooks do not claim exact reproduction of historical NN training or equal outcomes across all earlier case-specific protocols.
-
-CPU execution is tested on macOS; see the [v1.0.0 validation notes](docs/releases/v1.0.0.md). Physical CUDA validation is reported there; unavailable hardware is never described as tested.
 
 ## License
 
